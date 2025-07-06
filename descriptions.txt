@@ -1,0 +1,64 @@
+/**
+ * @brief Finds the median value of an array.
+ *
+ * This function first sorts the array in descending order and then calculates
+ * the median. If the array has an even number of elements, the median is the
+ * average of the two middle elements. If it has an odd number, it's the middle element.
+ *
+ * @param arr Pointer to the unsigned char array. The array will be sorted in place.
+ * @param len The number of elements in the array.
+ *
+ * @return The median value as a float. Returns 0.0f if the array is empty.
+ */
+
+/**
+ * @brief Finds the mean (average) value of an array.
+ *
+ * This function sums all elements in the array and divides by the total number of elements.
+ * It uses a 'long long' for the sum to prevent potential integer overflow and
+ * ensures floating-point division for accurate results.
+ *
+ * @param arr Pointer to the unsigned char array.
+ * @param len The number of elements in the array.
+ *
+ * @return The mean value as a float. Returns 0.0f if the array is empty.
+ */
+float find_mean(unsigned char* arr, unsigned int len);
+
+/**
+ * @brief Finds the maximum value in an array.
+ *
+ * This function iterates through the array to find the largest unsigned char value.
+ *
+ * @param arr Pointer to the unsigned char array.
+ * @param len The number of elements in the array.
+ *
+ * @return The maximum value found in the array as an unsigned char. Returns 0 if the array is empty.
+ */
+unsigned char find_maximum(unsigned char* arr, unsigned int len);
+
+/**
+ * @brief Finds the minimum value in an array.
+ *
+ * This function iterates through the array to find the smallest unsigned char value.
+ *
+ * @param arr Pointer to the unsigned char array.
+ * @param len The number of elements in the array.
+ *
+ * @return The minimum value found in the array as an unsigned char. Returns 0 if the array is empty.
+ */
+unsigned char find_minimum(unsigned char* arr, unsigned int len);
+
+/**
+ * @brief Sorts an array from largest to smallest (descending order).
+ *
+ * This function uses a bubble sort algorithm to reorder the elements
+ * of the array such that the largest value is at index 0 and the smallest
+ * value is at the last index (len-1). The sorting is done in-place.
+ *
+ * @param arr Pointer to the unsigned char array to be sorted.
+ * @param len The number of elements in the array.
+ *
+ * @return void
+ */
+void sort_array(unsigned char* arr, unsigned int len);
